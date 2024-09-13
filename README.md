@@ -1,47 +1,40 @@
+# Customer Churn Prediction Using ANN
 
-Customer Churn Prediction Using ANN
-This project demonstrates the application of Artificial Neural Networks (ANN) to predict customer churn based on a dataset from a telecom company. The analysis focuses on identifying whether customers will churn using both Artificial Neural Networks (ANN) and Convolutional Neural Networks (CNN) and compares their performance.
+## Project Overview
 
-Features
-Data preprocessing and exploration.
-Churn prediction using ANN.
-Model evaluation and comparison.
-Data visualization for insights.
-Prerequisites
-Before you begin, ensure you have met the following requirements:
+This project uses Artificial Neural Networks (ANN) to predict customer churn from a telecom dataset. The goal is to analyze customer data and predict churn behavior, enabling the company to target retention strategies more effectively.
 
-Python 3.6+
-pandas
-NumPy
-Matplotlib
-TensorFlow
-Scikit-learn
-Installation
-Clone the repo:
+## Dataset
 
-bash
-Copy code
-git clone https://github.com/yourusername/customer-churn-prediction.git
-cd customer-churn-prediction
-Install the required packages:
+The dataset includes various customer attributes such as demographic information, account details, and service usage, labeled with whether the customer has churned or not.
 
-bash
-Copy code
-pip install -r requirements.txt
-Usage
-Run the script to train the model and evaluate its performance:
+### Key Features
 
-bash
-Copy code
-python churn_prediction.py
-Data
-The dataset used in this project (customer_churn.csv) includes the following features:
+- `Gender`: Whether the customer is male or female.
+- `SeniorCitizen`: Indicates if the customer is a senior citizen.
+- `Partner`: Whether the customer has a partner.
+- `Dependents`: Whether the customer has dependents.
+- `Tenure`: Number of months the customer has been with the company.
+- `PhoneService`: Whether the customer has phone service.
+- `MultipleLines`: Whether the customer has multiple lines.
+- `InternetService`: Type of internet service (DSL, Fiber optic, None).
+- `OnlineSecurity`: Whether the customer has online security.
+- `OnlineBackup`: Whether the customer has online backup.
+- `DeviceProtection`: Whether the customer has device protection.
+- `TechSupport`: Whether the customer has tech support.
+- `StreamingTV`: Whether the customer has streaming TV.
+- `StreamingMovies`: Whether the customer has streaming movies.
+- `Contract`: The contract term of the customer (Month-to-month, One year, Two year).
+- `PaperlessBilling`: Whether the customer has paperless billing.
+- `PaymentMethod`: The customer’s payment method.
+- `MonthlyCharges`: The amount charged to the customer monthly.
+- `TotalCharges`: The total amount charged to the customer.
+- `Churn`: Whether the customer churned (Yes or No).
 
-customerID: Customer ID
-gender: Customer gender (male/female)
-SeniorCitizen: Whether the customer is a senior citizen (1) or not (0)
-tenure: Number of months the customer has stayed with the company
-Service: Type of internet service
-MonthlyCharges: The amount charged to the customer monthly
-TotalCharges: The total amount charged to the customer
-Churn: Whether the customer churned (1) or not (0)
+## Model
+
+The project uses an ANN model built with TensorFlow and Keras. It includes several dense layers and processes features after encoding categorical variables and scaling numerical variables.
+
+## Usage
+
+Run the analysis notebook/script to train the model and make predictions. The model's performance is evaluated based on accuracy, precision, and recall metrics.
